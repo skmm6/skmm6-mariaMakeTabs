@@ -1,0 +1,224 @@
+header{
+    min-height: 800px;
+    background-image: url(../img/Header/mainscreen_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+        .header-lang {
+            position: absolute;
+            right: 4.4rem;
+            top: 21rem;
+            .header-lang__content{
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: #FFFFFF;
+                text-decoration: none;
+                z-index: 10;
+                &.active {
+                    color:#924851;
+                }
+            }
+            .header-lang--line{
+                width: 25px;
+                height: 2px;
+                margin: 1.5rem 0;
+                background: #FFFFFF;
+            }
+
+        }
+        .header-photo__woomen{
+            background-image: url(../img/Header/photo-beautiful-blond-woman-with-flower-closeup-attractive-sensual-face-white-woman-with-curly-hair-smokey-eye-makeup_1.png);
+            background-size: cover;
+            background-position: center center;
+            z-index: 10;
+            width: 660px;
+            height: 698px;
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            right: 7rem;
+        }
+        .header-navbar{
+            align-items: center;
+            justify-content: center;
+            padding:4rem 0;
+            i{
+                color: #fff;
+                padding: 0 1rem;
+                font-size: 1.6rem;
+                cursor: pointer;
+            }
+            .header-navbar__menu{
+                display: flex;
+                div{
+                    a{
+                        padding: 0 1rem;
+                        text-decoration: none;
+                        color: #000000;
+                        font-family: Raleway;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: .875rem;
+                        line-height: 1rem;   
+                    }
+                }
+            }
+        }
+        .header-logo{
+                Height:233px;
+                background-image: url(../img/Header/logo_white_3.png);
+                background-size: cover;
+                background-position: center center;
+                margin:7rem  5rem 0;
+                padding: 0;
+                background-repeat: no-repeat;
+        }
+        .header-heading{
+            padding: 0 0 .25rem ;
+        }
+        h1{
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+
+            margin-left: 5rem;
+            color: #924851;
+        }
+        .header-btn {
+            margin-left: 4rem;
+        }
+        .header-social{
+            position: absolute;
+            right: 3.9rem;
+            bottom: 12rem;
+            z-index: 10;
+            .header-social__content{
+                padding: .9rem 0;
+                display: flex;
+                text-decoration: none;
+                color: #fff;
+                font-size: 2rem;
+                align-items: center;
+                justify-content: center;
+                transition: .3 ease;
+                &:hover{
+                    color:#924851;
+                }
+            }
+        }
+
+
+        @media screen and (max-width: 576px) {
+            min-height: 596px;
+            overflow: hidden;
+            .header-lang {
+                display: flex;
+                position: absolute;
+                right: 2rem;
+                top: 2rem;
+                align-items: center;
+                    .header-lang--line{
+                        transform: rotate(90deg);
+                        width: 1rem;
+                        height: 1px;
+                        margin: 0 .4rem;
+                    }
+            }
+            .header-photo__woomen{
+                left: 48%;
+                width: 426px;
+                height: 451px;
+            }
+            .header-navbar{
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                margin-bottom: 5rem;
+                .header-navbar__close{
+                    background-image: url(../img/Header/icon/Xsquare.svg);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 1.5rem;
+                    right: 1.5rem;
+                }
+                .header-navbar__menu{
+                    position: fixed;
+                    width: 100%;
+                    height: 435px;
+                    left: 0;
+                    top: 0;
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    z-index: 999;
+                    row-gap: 2rem;
+                    justify-content: center;
+                    transform: translateX(-800px);
+                    visibility: hidden;
+                    transition: ease .6s;
+                    &.open {
+                        transform: translateX(0);
+                        visibility: visible;
+                    }
+                    div{
+                        a{
+                            font-family: Raleway;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 24px;
+                            line-height: 28px;
+                            text-align: center;
+                            color: #000000;
+                            padding: 0 1.5rem 2rem;
+                        }
+                    }
+                }
+            }
+            .header-logo{
+                background-position: left center;
+                Height:121px;
+             
+                background-size: contain;
+                margin: 0 0 0;
+                padding: 0;
+            }
+            .header-heading{
+                padding: 0 15px ;
+            }
+            h1{
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                margin-left: 0;
+            }
+            .header-btn {
+                margin-left: 0;
+            }
+            .header-social{
+                position: static;
+                display: flex;
+                column-gap: 1rem;
+                padding: 15px;
+                margin-top: 2.7rem;
+                .header-social__content{
+                    font-size: 1.8rem;
+                   
+                }
+            }
+        }
+
+}

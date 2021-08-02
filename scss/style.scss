@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@400;500&display=swap');
+
+
+@import 'normalize';
+@import 'grid12';
+@import 'header';
+@import 'btn';
+@import 'services';
+@import 'portfolio';
+@import 'reviews';
+@import 'formApp';
+@import 'footer';
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: Prata;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 49px;
+    color: #000000;
+        @media screen and (max-width: 576px) {
+            font-size: 1.5rem;
+            line-height: 33px;
+        }
+    &.primory{
+        color: #924851;
+    }
+}
+
+h3 {
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 33px;
+    color: #000000;
+        @media screen and (max-width: 576px) {
+            font-size: 0.875rem;
+            line-height: 19px;
+        }
+
+}
